@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:80%;
+    background-color:rgb(43, 226, 226);
+    border-radius:10px;
+    clip-path: circle(6.4% at 86% 13%);
+    transition:all 0.4s;
+    cursor:pointer;
+
+}
+
+h1{
+    text-transform:uppercase;
+    text-align:center;
+    margin:20px 0 0 0;
+}
+
+p{
+    padding:20px 20px;
+}
+
+.container:hover{
+    clip-path: circle(122.4% at 86% 13%);
+}
+
+@media screen and (min-width:948px){
+    .container{
+        clip-path: circle(4.3% at 76% 17%);
+
+    }
+}
+
+@media screen and (max-width:609px){
+    .container{
+        clip-path: circle(4.3% at 80% 14%);
+
+    }
+}
+
